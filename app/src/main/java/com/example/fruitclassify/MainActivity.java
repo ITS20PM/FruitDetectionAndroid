@@ -30,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
     Button selectBtn, predictBtn, captureBtn;
     TextView result;
     ImageView imageView;
-    Bitmap bitmap;
 
     int imageSize = 32;
 
