@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">FruitClassify</string>
+    <string name="fruit_detection_classifier">Fruit Detection Classifier</string>
+</resources>
