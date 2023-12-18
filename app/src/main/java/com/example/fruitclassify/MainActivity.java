@@ -27,7 +27,7 @@ import java.nio.ByteOrder;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button selectBtn, predictBtn, captureBtn;
+    Button selectBtn, captureBtn;
     TextView result;
     ImageView imageView;
 
@@ -39,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         selectBtn = findViewById(R.id.selectBtn);
-        predictBtn = findViewById(R.id.predictBtn);
         captureBtn = findViewById(R.id.captureBtn);
 
         result = findViewById(R.id.result);
@@ -117,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
             // Releases model resources if no longer used.
             model.close();
         } catch (IOException e) {
-            // TODO Handle the exception
+            e.printStackTrace();
         }
 
     }
